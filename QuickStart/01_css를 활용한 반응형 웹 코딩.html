@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_css를 활용한 반응형 웹 코딩</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <style>
+      *{padding:0;margin:0;}
+      body{
+          background-color: pink;
+      }
+      #wrapper{
+          border: 1px solid gray;
+          width: 80%;
+          margin: 0 auto;
+      }
+      nav li{
+          list-style: none;
+          float: left;
+          border: 1px solid gray;
+          width: 20%;
+          box-sizing: border-box;
+          text-align: center;
+      }
+      nav ul{
+          overflow: hidden;
+      }
+      header h1{
+          text-align: center;
+          margin-bottom: 20px;
+      }
+      header {
+          padding: 20px 0 0 0;
+          border: 1px solid gray;
+      }
+      .content{
+          padding: 10px;
+      }
+      footer{
+          border: 1px solid gray;
+          height: 100px;
+          line-height: 100px;
+          text-align: center;
+      }
+
+      /*디바이스 별 반응형 레이아웃 설정*/
+      @media (min-width: 992px){
+          body{
+              background-color: lightblue;
+          }
+      }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>반응형 웹</h1>
+            <nav>
+                <ul>
+                    <li>menu1</li>
+                    <li>menu2</li>
+                    <li>menu3</li>
+                    <li>menu4</li>
+                    <li>menu5</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <h2>반응형 웹은 미디어쿼리를 사용하여 스타일링 합니다.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi assumenda adipisci aliquam magni vel! Id, iure! Illo impedit adipisci quisquam corrupti, iure quod quae sunt placeat obcaecati repellat vitae molestias.</p>
+        </div>
+        <footer>
+            <h1>designed by sj</h1>
+        </footer>
+    </div>
+</body>
+</html>
