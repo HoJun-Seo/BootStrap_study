@@ -22,6 +22,7 @@
           border: 1px solid gray;
           width: 80%;
           margin: 0 auto;
+          font-size: 2vw;
       }
       nav li{
           list-style: none;
@@ -53,9 +54,37 @@
       }
 
       /*디바이스 별 반응형 레이아웃 설정*/
+      @media (max-width: 767px){
+          body{
+              background-color: purple;
+          }
+          #wrapper{
+              width: 100%;
+              font-size: 2em;
+          }
+          nav li{
+              width: 100%;
+          }
+      }
+      @media (min-width: 768px){
+          body{
+              background-color:  orange;
+          }
+          #wrapper{
+              width: 100%;
+          }
+      }
       @media (min-width: 992px){
           body{
               background-color: lightblue;
+          }
+          #wrapper{
+              width: 80%;
+          }
+      }
+      @media (min-width: 1200px){
+          body{
+              background-color: #1c07cd;
           }
       }
     </style>
