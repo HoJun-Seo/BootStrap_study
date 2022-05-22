@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- 합쳐지고 최소화된 최신 CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+        <!-- 부가적인 테마 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    
+        <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+        <script src="https:/ /maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <style>
+            div{
+                border: 1px solid red;
+            }
+            @media(min-width:768px){
+                #info{
+                    height: 937px;
+                }
+            }
+            @media(min-width:768px) and (max-width:990px){
+                #stringHeight{
+                    height: 150px;
+                }
+                .bg-warning{
+                    height: 937px;
+                }
+                .bg-danger{
+                    height: 237px;
+                }
+            }
+        </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-10 col-md-10 col-sm-6 bg-warning">
+                <h2>Title</h2>
+                <p id="stringHeight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minima velit nesciunt, ex doloremque ipsa aliquid eligendi! Cum excepturi, commodi perspiciatis enim ratione laborum fugit eum odio porro quod. Earum?</p>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 bg-danger">
+                        <h2>Title</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore voluptas, aliquid laboriosam quae modi ipsa asperiores amet quod, error tempore sapiente soluta? Sapiente officia vero quo obcaecati tempora amet ipsa.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 bg-danger">
+                        <h2>Title</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore voluptas, aliquid laboriosam quae modi ipsa asperiores amet quod, error tempore sapiente soluta? Sapiente officia vero quo obcaecati tempora amet ipsa.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 bg-danger">
+                        <h2>Title</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore voluptas, aliquid laboriosam quae modi ipsa asperiores amet quod, error tempore sapiente soluta? Sapiente officia vero quo obcaecati tempora amet ipsa.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 bg-info" id="info">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, eaque. Error explicabo fuga nulla numquam, asperiores adipisci officia eaque debitis laboriosam quaerat repellendus excepturi, obcaecati, voluptas dolorem blanditiis soluta dolor!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
