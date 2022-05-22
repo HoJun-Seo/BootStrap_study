@@ -21,7 +21,30 @@
             #menu{
                 height: 230px;
             }
+            #firstString{
+                height: 420px;
+            }
+            #thirdString{
+                height: 230px;
+            }
         }
+        @media(min-width:1200px){
+            #firstString{
+                height: 360px;
+            }
+        }
+        @media(max-width:767px){
+            #thirdString{
+                height: 60px;
+            }
+        }
+        @media(min-width:768px) and (max-width:990px){
+            #thirdString{
+                height: 60px;
+            }
+        }
+        
+        
     </style>
 </head>
 <body>
@@ -32,7 +55,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 col-lg-2 col-xs-12 bg-danger img-rounded"
+            <div class="col-md-4 col-lg-2 col-xs-12 col-lg-push-10 bg-danger img-rounded"
                 id="menu">
                 <ul class="list-unstyled text-center">
                     <li><a href="#">파스타</a></li>
@@ -42,13 +65,33 @@
                 </ul>
             </div>
             <div class="col-md-6 col-md-offset-2 col-lg-6 col-lg-offset-1 col-xs-12 bg-warning img-rounded ">
-                <ul class="list-unstyled">
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptate architecto aut distinctio facilis, libero hic accusamus ea aperiam quasi illo atque cupiditate, vero repellat. Nihil commodi optio veniam omnis?</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptas perspiciatis sit asperiores rerum. Dolorum id labore quibusdam eaque. Similique explicabo illum provident aliquid culpa magni quidem nulla, cupiditate dolorum.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit quae, deleniti dolorem libero neque adipisci dolor esse cupiditate a placeat eius sapiente quis excepturi reprehenderit, quod laudantium eos magni?</li>
-                </ul>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 bg-success" id="firstString">
+                        <ul class="list-unstyled">
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptate architecto aut distinctio facilis, libero hic accusamus ea aperiam quasi illo atque cupiditate, vero repellat. Nihil commodi optio veniam omnis?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptas perspiciatis sit asperiores rerum. Dolorum id labore quibusdam eaque. Similique explicabo illum provident aliquid culpa magni quidem nulla, cupiditate dolorum.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit quae, deleniti dolorem libero neque adipisci dolor esse cupiditate a placeat eius sapiente quis excepturi reprehenderit, </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-6 bg warning">
+                        <ul class="list-unstyled">
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptate architecto aut distinctio facilis, libero hic accusamus ea aperiam quasi illo atque cupiditate, vero repellat. Nihil commodi optio veniam omnis?</li>
+                            <li>Lorem ipsum dolor Lorem, ipsum dolor. Lorem, ipsum dolor.</li>
+
+                        </ul>
+                        <div class="row">
+                            <div class="col-lg-12 bg-primary" id="thirdString">
+                                <ul class="list-unstyled">
+                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptate architecto aut distinctio facilis, libero hic accusamus ea aperiam quasi illo atque cupiditate, vero repellat. Nihil commodi optio veniam omnis?</li>
+                                    <li>  asperiores rerum. Dolorum id labore quibusdam eaque. Similique explicabo illum provident aliquid culpa magni</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-            <div class="col-md-12 col-lg-2 col-lg-offset-1 col-xs-12 bg-primary img-rounded">
+            <div class="col-md-12 col-lg-2 col-lg-offset-1 col-xs-12 col-lg-pull-10 bg-primary img-rounded">
                 <ul class=" text-center list-unstyled">
                     <li>메인쉐프 멤버</li>
                     <li>김주영</li>
