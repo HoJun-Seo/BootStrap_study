@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <style>
+        .w30{
+            width: 30%;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h3>닫기 아이콘</h3>
+    <p>button 태그 안에 span 태그를 주고 &times; 을 넣은 후에 클래스 명으로
+        close 를 부여해줄 수 있다.
+    </p>
+    <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+    <h3>드롭다운 메뉴에서 사용하는 캐렛 버튼</h3>
+    <span class="caret"></span><br>
+    <button class="btn btn-danger">드롭다운 메뉴
+        <span class="caret"></span>
+    </button>
+
+    <h3>실제로 동작하는 x 버튼 만들기</h3>
+    <div class="alert btn btn-info">
+        이용해주셔서 감사합니다.
+        <button type="button" class="close" aria-label="Close" data-dismiss="alert">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <h3>실제로 동작하는 x 버튼이 구현되려면 x 아이콘을 감싸고 있는 button 태그에 data-dismiss="alert" 를 추가하고</h3>
+    <h3>해당 요소를 감싸고 있는 부모태그에는 클래스명에 alert 를 추가해주면 된다.</h3>
+
+    <h3>간편하게 원하는 요소를 왼쪽, 오른쪽으로 이동하고 싶을 때 사용하는 클래스명 pull-left, pull-right</h3>
+    <div class="w30 pull-left bg-info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsum amet neque. Voluptatibus voluptatem velit quam eaque, natus iusto voluptates dicta, reiciendis fugiat ad magni sed? Et earum incidunt quisquam!
+    </div>
+    <div class="bg-danger col-xs-3 pull-right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus corporis suscipit vitae rem voluptas libero. Quisquam voluptas accusantium voluptatem fuga culpa dolores adipisci at, impedit quod corrupti repellat temporibus cupiditate!
+    </div>
+    <div class="clearfix"></div>
+    <div class="bg-warning col-xs-4">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed adipisci hic sint, culpa consequatur et fugit eos vel quas voluptas quos, voluptatibus nulla optio dolor fuga. Aliquid voluptatum totam dolorem.
+    </div>
+    <div class="w30 center-block">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis tempora voluptas, libero dolor quam impedit eius alias dicta excepturi provident hic dolorem ipsum corporis, eos illum iusto sequi illo ea?
+    </div>
+</body>
+</html>
