@@ -14,15 +14,28 @@
     <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <style>
-        body { padding-bottom: 70px; }
+        body { 
+            padding-bottom: 70px;
+            position: relative;
+         }
         .container-fluid .row p{
             font-size: 2em;
         }
         
     </style>
+    <script>
+        $(function(){
+            $('body').scrollspy(
+                {
+                    target:'.navbar-scrollspy',
+                    offset:10
+                }
+            )
+        })
+    </script>
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -39,9 +52,9 @@
             </div>
       
           <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse navbar-scrollspy" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#book">디자인북 작업<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#book">디자인북 작업<span class="sr-only">(current)</span></a></li>
                     <li><a href="#video">동영상 작업</a></li>
                     <li><a href="#web">웹 페이지 작업</a></li>
                     <li><a href="#ad">광고 이미지 작업</a></li>
