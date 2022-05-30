@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- 합쳐지고 최소화된 최신 CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <!-- 부가적인 테마 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".pagination li").click(function(){
+                    let menu = $(".pagination li");
+                    menu.removeClass("active");
+                    $(this).addClass("active");
+                })
+            })
+        </script>
+    </head>
+<body>
+    <ol class="breadcrumb">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Data</a></li>
+    </ol>
+
+    <nav>
+        <ul class="pagination pagination-lg">
+          <li>
+            <a href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="active"><a href="#">1</a></li>
+          <li class="disabled"><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li>
+            <a href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+    </nav>
+
+    <nav>
+      <ul class="pager">
+        <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span>이전</a></li>
+        <li class="next"><a href="#">다음<span aria-hidden="true">&rarr;</span></a></li>
+      </ul>
+    </nav>
+
+    <h3>Example heading <span class="label label-default">New</span></h3>
+    <h3><span class="label label-default">Default<span class="badge">4</span></h3>
+    </span>
+    <span class="label label-primary">Primary</span>
+    <span class="label label-success">Success</span>
+    <span class="label label-info">Info</span>
+    <span class="label label-warning">Warning</span>
+    <span class="label label-danger">Danger</span>
+
+    <br>
+    <button class="btn btn-primary" type="button">
+      Messages <span class="badge">4</span>
+    </button>
+    <button class="btn btn-warning" type="button">
+      Messages <span class="badge">4</span>
+    </button>
+    <button class="btn btn-info" type="button">
+      Messages <span class="badge">4</span>
+    </button>
+    <button class="btn btn-success" type="button">
+      Messages <span class="badge">4</span>
+    </button>
+
+    <div class="jumbotron">
+      <h1>Hello, world!</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia architecto facilis, a labore expedita ex asperiores nobis nostrum! Magnam ratione nam quam perferendis nisi possimus saepe nulla provident laboriosam. Libero!</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    </div>
+    <div>
+      <h1>Hello, world!</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis suscipit mollitia temporibus a fugit illo? Veritatis fuga sapiente, voluptates dolor nemo minus exercitationem quibusdam dignissimos praesentium quo dolorum voluptatum possimus.</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    </div>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Hello, world!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia architecto facilis, a labore expedita ex asperiores nobis nostrum! Magnam ratione nam quam perferendis nisi possimus saepe nulla provident laboriosam. Libero!</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+      </div>
+    </div>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Hello, world!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia architecto facilis, a labore expedita ex asperiores nobis nostrum! Magnam ratione nam quam perferendis nisi possimus saepe nulla provident laboriosam. Libero!</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+      </div>
+    </div>
+</body>
+</html>
