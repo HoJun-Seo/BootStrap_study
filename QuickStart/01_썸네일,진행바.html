@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <style>
+      .media img{
+        width: 100px;
+      }
+    </style>
+  </head>
+<body>
+    <h3>.thumbnail 안의 img 태그는 max-width: 100% 라는 스타일을 가지고 있어서</h3>
+    <h3>화면의 크기에 맞게 이미지의 크기가 맞춰진다.</h3>
+
+    <h2>그리드 시스템에서의 썸네일 활용</h2>
+    <div class="row">
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail" target="_blank">
+          <img src="..." alt="...">
+        </a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+          <a href="#" class="thumbnail" target="_blank">
+            <img src="..." alt="...">
+          </a>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <a href="#" class="thumbnail" target="_blank">
+            <img src="..." alt="...">
+          </a>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <a href="#" class="thumbnail" target="_blank">
+            <img src="..." alt="...">
+          </a>
+        </div>
+      그림에 대한 설명
+    </div>
+    <h2>맞춤 컨텐츠</h2>
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="..." alt="...">
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, alias?</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="..." alt="...">
+            <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, alias?</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            </div>
+          </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="..." alt="...">
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, alias?</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+    </div>
+
+    
+    <div class="container">
+      <h2>프로그래스 진행 바</h2>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+          <span class="sr-only">60% Complete</span>
+        </div>
+      </div>
+
+      <h2>진행율 텍스트 표시(span 태그 삭제)</h2>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+        60%
+      </div>
+    </div>
+
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;">
+        0%
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 2%;">
+        2%
+      </div>
+    </div>
+
+    <h2>다양한 색깔의 진행바</h2>
+    <div class="progress">
+      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+        <span class="sr-only">40% Complete (success)</span>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+        <span class="sr-only">20% Complete</span>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+        <span class="sr-only">60% Complete (warning)</span>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+        <span class="sr-only">80% Complete (danger)</span>
+      </div>
+    </div>
+
+    <h2>줄무늬 스타일 진행 바</h2>
+    <div class="progress">
+      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+        <span class="sr-only">40% Complete (success)</span>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+        <span class="sr-only">20% Complete</span>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+        <span class="sr-only">60% Complete (warning)</span>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+        <span class="sr-only">80% Complete (danger)</span>
+      </div>
+    </div>
+
+    <h2>움직이는 스타일의 줄무늬 진행 바</h2>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+        <span class="sr-only">45% Complete</span>
+      </div>
+    </div>
+    
+    <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <img class="media-object" src="..." alt="...">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Media heading</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum beatae tenetur enim quam doloribus atque soluta alias natus architecto modi dolor officia odio magni ad, eum adipisci, tempore non esse.
+      </div>
+    </div>
+
+    <h2>미디어 이미지의 오른쪽 정렬 : 이미지를 오른쪽으로 정렬하려면 media-left 대신</h2>
+    <h2>media-right 로 변경하고, media-body 구조 다음으로 media-right 를 배치시킨다.</h2>
+    <div class="media">
+      <div class="media-body">
+        <h4 class="media-heading">Media heading</h4>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere adipisci cumque blanditiis sint possimus quidem vitae tempora aut, velit error voluptatibus nemo suscipit distinctio ut quas fuga impedit omnis ad!
+      </div>
+    </div>
+    <div class="media-right">
+      <a href="#">
+        <img class="media-object" src="..." alt="...">
+      </a>
+    </div>
+
+    <h2>미디어 목록 : 미디어 안에 또다른 미디어를 넣는 구조</h2>
+    <ul class="media-list">
+      <li class="media">
+        <div class="media-left">
+          <a href="#">
+            <img class="media-object" src="..." alt="...">
+          </a>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Media heading</h4>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eaque doloremque ex maxime at itaque officiis repudiandae laboriosam aperiam deserunt, quasi veniam tenetur quaerat dolor incidunt, sunt illo obcaecati eveniet.
+        </div>
+      </li>
+    </ul>
+</body>
+</html>
