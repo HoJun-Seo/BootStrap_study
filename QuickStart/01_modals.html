@@ -74,6 +74,12 @@
               backdrop:"static"
           })
       })
+
+      // 이벤트 추가하기
+      $('#myModal').on('shown.bs.modal', function (e) {
+        // do something...
+        alert("이벤트에 참여해 주셔서 감사합니다.");
+      })
       
   </script>
 </body>

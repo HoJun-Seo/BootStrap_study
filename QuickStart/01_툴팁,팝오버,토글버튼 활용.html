@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            // $('[data-toggle="tooltip"]').tooltip();
+            $("#left").click(function(){
+                $("#left").tooltip('show');
+            })
+            $("#right").hover(function(){
+                $("#right").tooltip({
+                    'placement': 'bottom'
+                });
+            })
+            $("#bottom").tooltip({
+                'title':'툴팁의 내용을 옵션으로도 줄 수 있다.'
+            });
+            $("#top").tooltip();
+            $('#top').on('shown.bs.tooltip', function () {
+                alert("해당하는 말풍선의 내용이 궁금하다면 관련 웹 사이트를 방문해보세요"); 
+            })
+            $('[data-toggle="popover"]').popover({
+                'trigger':'hover'
+            })
+        })
+    </script>
+</head>
+<body>
+    <h2>툴팁</h2>
+    <br><br><br><br><br>
+    <a href="#" data-toggle="tooltip" title="Some tooltip text!">Hover over me</a>
+
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="button" id="left" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+
+    <button type="button" id="top" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+
+    <button type="button" id="bottom" class="btn btn-default" data-toggle="tooltip" data-placement="bottom">Tooltip on bottom</button>
+
+    <button type="button" id="right" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+
+    <h2>팝 오버</h2>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on left
+      </button>
+    
+      <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on top
+      </button>
+
+      <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+    sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on bottom
+      </button>
+
+      <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on right
+      </button>
+
+      <h2>토글 버튼</h2>
+      <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+        Single toggle
+      </button>
+
+      <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary active">
+          <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
+        </label>
+        <label class="btn btn-primary">
+          <input type="checkbox" autocomplete="off"> Checkbox 2
+        </label>
+        <label class="btn btn-primary">
+          <input type="checkbox" autocomplete="off"> Checkbox 3
+        </label>
+      </div>
+
+      <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary active">
+          <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+        </label>
+        <label class="btn btn-primary">
+          <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+        </label>
+        <label class="btn btn-primary">
+          <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+        </label>
+      </div>
+</body>
+</html>
